@@ -7,7 +7,9 @@
     <authors>Microsoft</authors>
     <owners>markjgardner</owners>
     <licenseUrl>https://raw.githubusercontent.com/Azure/azure-functions-core-tools/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/markjgardner/choco-azure-functions-core-tools</projectUrl>
+    <packageSourceUrl>https://github.com/markjgardner/choco-azure-functions-core-tools</packageSourceUrl>
+    <projectSourceUrl>https://github.com/Azure/azure-functions-core-tools/</projectSourceUrl>
+    <releaseNotes>https://github.com/Azure/azure-functions-core-tools/releases/</releaseNotes>
     <iconUrl>https://raw.githubusercontent.com/Azure/azure-functions-core-tools/master/src/Azure.Functions.Cli/npm/assets/azure-functions-logo-color-raster.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>####This is a fork of package [azure-functions-core-tools](https://chocolatey.org/packages/azure-functions-core-tools) that adds multi-architecture support (notably x64).
