@@ -2,9 +2,9 @@ $ErrorActionPreference = 'Stop';
  
 $packageName= 'azure-functions-core-tools.multiarch'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = '#{sourceUrix86}#'
+$url        = 'https://github.com/Azure/azure-functions-core-tools/releases/download/#{toolsVersion}#/Azure.Functions.Cli.win-x86.#{toolsVersion}#.zip'
 $checksum   = '#{checksumx86}#'
-$url64bit   = '#{sourceUrix64}#'
+$url64bit   = 'https://github.com/Azure/azure-functions-core-tools/releases/download/#{toolsVersion}#/Azure.Functions.Cli.win-x64.#{toolsVersion}#.zip'
 $checksum   = '#{checksumx64}#'
  
 $packageArgs = @{
@@ -12,10 +12,10 @@ $packageArgs = @{
   unzipLocation  = $toolsDir
   url            = $url
   checksum       = $checksum
-  checksumType   = 'SHA512'
+  checksumType   = 'SHA256'
   url64bit       = $url64bit
   checksum64     = $checksum64
-  checksumType64 = 'SHA512'
+  checksumType64 = 'SHA256'
 }
  
 Install-ChocolateyZipPackage @packageArgs

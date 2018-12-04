@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>azure-functions-core-tools</id>
-    <version>#{}#</version>
+    <id>azure-functions-core-tools.multiarch</id>
+    <version>#{toolsVersion}#</version>
     <title>Azure Function Core Tools (x86 + x64)</title>
     <authors>Microsoft</authors>
     <owners>markjgardner</owners>
@@ -16,4 +16,7 @@
     <summary>The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.</summary>
     <tags>azure functions azure-function cli core-tools</tags>
   </metadata>
+  <files>
+    <file src="tools\**\*.*" target="tools" />
+  </files>
 </package>
