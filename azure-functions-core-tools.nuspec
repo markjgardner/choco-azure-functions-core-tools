@@ -8,6 +8,7 @@
     <owners>nugetazurefunctions,markjgardner</owners>
     <licenseUrl>https://raw.githubusercontent.com/Azure/azure-functions-core-tools/master/LICENSE</licenseUrl>
     <packageSourceUrl>https://github.com/markjgardner/choco-azure-functions-core-tools</packageSourceUrl>
+    <projectUrl>https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local</projectUrl>
     <projectSourceUrl>https://github.com/Azure/azure-functions-core-tools/</projectSourceUrl>
     <releaseNotes>https://github.com/Azure/azure-functions-core-tools/releases/</releaseNotes>
     <iconUrl>https://raw.githubusercontent.com/Azure/azure-functions-core-tools/master/src/Azure.Functions.Cli/npm/assets/azure-functions-logo-color-raster.png</iconUrl>
