@@ -18,9 +18,9 @@ jobs:
           $toolsVersion = $release.name
           Write-Output ("##vso[task.setvariable variable=toolsVersion;]$toolsVersion")
           $hash86 = invoke-webrequest "https://github.com/Azure/azure-functions-core-tools/releases/download/$toolsVersion/Azure.Functions.Cli.win-x86.$toolsversion.zip.sha2"
-          Write-Output ("##vso[task.setvariable variable=checksumx86;]$([text.encoding]::utf8.getstring($hash86.Content))")
+          Write-Output ("##vso[task.setvariable variable=checksumx86;]$([text.encoding]::utf8.getstring($hash64.Content).replace('-',[string]::Empty))")
           $hash64 = invoke-webrequest "https://github.com/Azure/azure-functions-core-tools/releases/download/$toolsVersion/Azure.Functions.Cli.win-x64.$toolsversion.zip.sha2"
-          Write-Output ("##vso[task.setvariable variable=checksumx64;]$([text.encoding]::utf8.getstring($hash64.Content))")
+          Write-Output ("##vso[task.setvariable variable=checksumx64;]$([text.encoding]::utf8.getstring($hash64.Content).replace('-',[string]::Empty))")
         displayName: 'Get Current Release Version + Checksums'
       - task: qetza.replacetokens.replacetokens-task.replacetokens@3
         displayName: 'Replace Tokens in nuspec and ps1'
