@@ -1,20 +1,18 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>azure-functions-core-tools.multiarch</id>
+    <id>azure-functions-core-tools</id>
     <version>#{toolsVersion}#</version>
-    <title>Azure Function Core Tools (x86 + x64)</title>
+    <title>Azure Function Core Tools</title>
     <authors>Microsoft</authors>
-    <owners>markjgardner</owners>
+    <owners>nugetazurefunctions,markjgardner</owners>
     <licenseUrl>https://raw.githubusercontent.com/Azure/azure-functions-core-tools/master/LICENSE</licenseUrl>
     <packageSourceUrl>https://github.com/markjgardner/choco-azure-functions-core-tools</packageSourceUrl>
     <projectSourceUrl>https://github.com/Azure/azure-functions-core-tools/</projectSourceUrl>
     <releaseNotes>https://github.com/Azure/azure-functions-core-tools/releases/</releaseNotes>
     <iconUrl>https://raw.githubusercontent.com/Azure/azure-functions-core-tools/master/src/Azure.Functions.Cli/npm/assets/azure-functions-logo-color-raster.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>####This is a fork of package [azure-functions-core-tools](https://chocolatey.org/packages/azure-functions-core-tools) that adds multi-architecture support (notably x64).
-
-    The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.</description>
+    <description>The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.</description>
     <summary>The Azure Functions Core Tools provide a local development experience for creating, developing, testing, running, and debugging Azure Functions.</summary>
     <tags>azure functions azure-function cli core-tools</tags>
   </metadata>

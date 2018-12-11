@@ -1,11 +1,11 @@
 $ErrorActionPreference = 'Stop';
  
-$packageName= 'azure-functions-core-tools.multiarch'
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/Azure/azure-functions-core-tools/releases/download/#{toolsVersion}#/Azure.Functions.Cli.win-x86.#{toolsVersion}#.zip'
-$checksum   = '#{checksumx86}#'
-$url64bit   = 'https://github.com/Azure/azure-functions-core-tools/releases/download/#{toolsVersion}#/Azure.Functions.Cli.win-x64.#{toolsVersion}#.zip'
-$checksum   = '#{checksumx64}#'
+$packageName = 'azure-functions-core-tools'
+$toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url         = 'https://github.com/Azure/azure-functions-core-tools/releases/download/#{toolsVersion}#/Azure.Functions.Cli.win-x86.#{toolsVersion}#.zip'
+$checksum    = '#{checksumx86}#'
+$url64bit    = 'https://github.com/Azure/azure-functions-core-tools/releases/download/#{toolsVersion}#/Azure.Functions.Cli.win-x64.#{toolsVersion}#.zip'
+$checksum64  = '#{checksumx64}#'
  
 $packageArgs = @{
   packageName    = $packageName
